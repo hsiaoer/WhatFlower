@@ -37,7 +37,7 @@ class MainVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
     }
     
     func detect(image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: FlowerClassifier().model) else { fatalError("Cannot import model.") }
+        guard let model = try? VNCoreMLModel(for: FlowerClassifier().fritz().model) else { fatalError("Cannot import model.") }
         let request = VNCoreMLRequest(model: model) { (request, error) in
             guard let classification = request.results?.first as? VNClassificationObservation else { fatalError("Could not classify image.") }
             self.navigationItem.title = classification.identifier.capitalized

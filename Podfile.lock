@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - Fritz (1.0.0-beta5)
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
@@ -7,14 +8,16 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Fritz (~> 1.0.0-beta)
   - SDWebImage
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Fritz: a3bf484ce949e36748f1b365049be9e5b21a91c9
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 932056553227b52c8d8dfe752b4ab25275e25eb6
+PODFILE CHECKSUM: d26b8431d40672b9582ca5537be291f6405dc256
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F93105E202A5871005D5C2A /* FlowerClassifier+Fritz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93105D202A5871005D5C2A /* FlowerClassifier+Fritz.swift */; };
 		6340FE7B1FE0B9F500DA1A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340FE7A1FE0B9F500DA1A6D /* AppDelegate.swift */; };
 		6340FE7D1FE0B9F500DA1A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340FE7C1FE0B9F500DA1A6D /* ViewController.swift */; };
 		6340FE801FE0B9F500DA1A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6340FE7E1FE0B9F500DA1A6D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		2E0997E281AF6D119466B1E8 /* Pods-WhatFlower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatFlower/Pods-WhatFlower.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD4DEA472C4961BE67B0C62 /* Pods_WhatFlower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatFlower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F93105D202A5871005D5C2A /* FlowerClassifier+Fritz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlowerClassifier+Fritz.swift"; sourceTree = "<group>"; };
 		6340FE771FE0B9F500DA1A6D /* WhatFlower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatFlower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6340FE7A1FE0B9F500DA1A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6340FE7C1FE0B9F500DA1A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				6340FE811FE0B9F500DA1A6D /* Assets.xcassets */,
 				6340FE831FE0B9F500DA1A6D /* LaunchScreen.storyboard */,
 				6340FE861FE0B9F500DA1A6D /* Info.plist */,
+				5F93105D202A5871005D5C2A /* FlowerClassifier+Fritz.swift */,
 			);
 			path = WhatFlower;
 			sourceTree = "<group>";
@@ -188,12 +191,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Fritz/Framework/Fritz.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6340FE8D1FE0BB3400DA1A6D /* FlowerClassifier.mlmodel in Sources */,
+				5F93105E202A5871005D5C2A /* FlowerClassifier+Fritz.swift in Sources */,
 				6340FE7D1FE0B9F500DA1A6D /* ViewController.swift in Sources */,
 				6340FE7B1FE0B9F500DA1A6D /* AppDelegate.swift in Sources */,
 			);
@@ -367,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7DFWNNEL3;
 				INFOPLIST_FILE = WhatFlower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chadarutherford.WhatFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7DFWNNEL3;
 				INFOPLIST_FILE = WhatFlower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chadarutherford.WhatFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
